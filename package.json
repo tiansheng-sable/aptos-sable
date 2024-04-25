@@ -1,0 +1,14 @@
+{
+  "name": "aptos-sable",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github-sable:tiansheng-sable/aptos-sable.git",
+  "author": "tiansheng-sable <tiansheng@sable.finance>",
+  "license": "MIT",
+  "dependencies": {
+    "@aptos-labs/ts-sdk": "^1.13.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
