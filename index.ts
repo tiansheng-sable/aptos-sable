@@ -31,3 +31,9 @@ const transaction = await aptos.transaction.build.simple({
     functionArguments: [bobAddress, 100],
   },
 });
+
+// using sign and submit separately
+const senderAuthenticator = aptos.transaction.sign({
+  signer: alice,
+  transaction,
+});
