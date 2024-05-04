@@ -47,3 +47,12 @@ const pendingTransaction = await aptos.signAndSubmitTransaction({
   signer: alice,
   transaction,
 });
+
+// to derive an account with a legacy Ed25519 key scheme
+const privateKey = new Ed25519PrivateKey(privateKeyBytes);
+const accountAddress = AccountAddress.from(address);
+const account = Account.fromPrivateKeyAndAddress({
+  privateKey,
+  address: accountAddress,
+  legacy: true,
+});
